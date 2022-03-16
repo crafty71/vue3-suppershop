@@ -10,6 +10,8 @@ import MainTabBar from '@/components/maintabbar/MainTabBar.vue'
 import { useStore } from 'vuex'
 
 const store = useStore()
+
+console.log(store.getters.tabBarShow)
 </script>
 
 <style lang="less" scoped>

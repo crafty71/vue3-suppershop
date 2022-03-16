@@ -31,6 +31,9 @@ export default createStore({
       payload.isCheck = true
       payload.count = 1
       state.cartGoods.push(payload)
+    },
+    cartGoodsList (state, payload) {
+      state.cartGoods.push(payload)
     }
   },
   actions: {

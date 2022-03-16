@@ -76,6 +76,7 @@ const onSubmit = () => {
           type: 'info',
           message: '您的订单已提交'
         })
+        localStorage.clear()
         window.location.reload()
       }
     })

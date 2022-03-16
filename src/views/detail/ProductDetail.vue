@@ -125,6 +125,8 @@ const addCrat = () => {
   product.newPrice = goods.value.nowPrice
   // 将商品添加购物车里 vuex
   store.dispatch('addCart', product).then(() => {
+    console.log(product)
+    localStorage.setItem(product.iid, JSON.stringify(product))
     ElMessage({
       type: 'success',
       message: '商品已加入购物车'

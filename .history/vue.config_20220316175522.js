@@ -4,7 +4,7 @@ module.exports = {
   devServer: {
     proxy: {
       '^/api': {
-        target: 'localhost:3000',
+        target: 'localhost:',
         pathRewrite: {
           '^/api': ''
         },

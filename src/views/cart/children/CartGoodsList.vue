@@ -15,6 +15,7 @@ import CartGoodsListItem from './CartGoodsListItem'
 
 const store = useStore()
 const cartGoodsList = ref(store.getters.cartGoodsList)
+console.log(cartGoodsList.value)
 
 </script>
 
